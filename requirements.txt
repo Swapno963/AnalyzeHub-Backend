@@ -3,15 +3,13 @@ asgiref
 beautifulsoup4
 certifi
 charset-normalizer
-crispy-bootstrap5
-crispy-tailwind
+
 defusedxml
 distlib
 dj-database-url
 Django
 django-auto-logout
 django-cors-headers
-django-crispy-forms
 django-environ
 django-filter
 django-modelcluster
@@ -31,9 +29,7 @@ joblib
 l18n
 laces
 Markdown
-numpy
 openpyxl
-pandas
 pi
 pillow
 pillow_heif
@@ -45,8 +41,7 @@ python-dateutil
 python-dotenv
 pytz
 requests
-scikit-learn
-scipy
+
 six
 soupsieve
 sqlparse
