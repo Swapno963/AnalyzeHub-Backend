@@ -35,11 +35,10 @@ numpy
 openpyxl
 pandas
 pi
-Pillow
+pillow
 pillow_heif
 pipenv
 platformdirs
-psycopg2
 psycopg2-binary
 PyJWT
 python-dateutil
