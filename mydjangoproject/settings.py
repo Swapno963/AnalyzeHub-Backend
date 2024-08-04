@@ -62,7 +62,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-     'corsheaders.middleware.CorsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
 ]
 
@@ -169,16 +169,15 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #     'x-requested-with',
 #     'x-csrftoken',
 # ]
-CORS_ALLOWED_ORIGINS = [
-    "https://analyze-hub-frontend-jm8vpwtkf-swapnos-projects.vercel.app",
-]
-CORS_ALLOW_CREDENTIALS = True
-
-# CORS_ALLOW_ALL_ORIGINS=True
-# CORS_ORIGIN_ALLOW_ALL = False
-# CORS_ALLOW_CREDENTIALS = True  # If you're using cookies or sessions for authentication
-# CORS_ORIGIN_WHITELIST = [
-#     'http://localhost:3000',  # Add the URL of your React frontend
-#     # Add other origins as needed
-#     'https://analyze-hub-frontend-jm8vpwtkf-swapnos-projects.vercel.app'
+# CORS_ALLOWED_ORIGINS = [
+#     "https://analyze-hub-frontend-jm8vpwtkf-swapnos-projects.vercel.app",
 # ]
+
+CORS_ALLOW_ALL_ORIGINS=True
+CORS_ORIGIN_ALLOW_ALL = False
+CORS_ALLOW_CREDENTIALS = True  # If you're using cookies or sessions for authentication
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:3000',  # Add the URL of your React frontend
+    # Add other origins as needed
+    'https://analyze-hub-frontend-jm8vpwtkf-swapnos-projects.vercel.app'
+]
