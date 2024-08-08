@@ -56,14 +56,13 @@ REST_FRAMEWORK = {
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
-    'django.middleware.common.CommonMiddleware',
 ]
 
 ROOT_URLCONF = 'mydjangoproject.urls'
@@ -154,25 +153,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 
-# CORS_ALLOW_METHODS = [
-#     'GET',
-#     'POST',
-#     'PUT',
-#     'PATCH',
-#     'DELETE',
-#     'OPTIONS',
-# ]
 
-# CORS_ALLOW_HEADERS = [
-#     'content-type',
-#     'accept',
-#     'authorization',
-#     'x-requested-with',
-#     'x-csrftoken',
-# ]
 CORS_ALLOWED_ORIGINS = [
-    "https://analyze-hub-frontend-jm8vpwtkf-swapnos-projects.vercel.app",
-    "http://localhost:3000",
+    "https://analyze-hub-frontend.vercel.app",
+    "http://localhost:3000",  # Keep this if you're also developing locally
 ]
+
 
 CORS_ALLOW_CREDENTIALS = True
