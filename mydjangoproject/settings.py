@@ -154,10 +154,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 
-CORS_ALLOWED_ORIGINS = [
-    "https://analyze-hub-frontend.vercel.app",
-    "http://localhost:3000",  # Keep this if you're also developing locally
-]
+# CORS_ALLOWED_ORIGINS = [
+#     "https://analyze-hub-frontend.vercel.app",
+#     "http://localhost:3000", 
+# ]
 
+CORS_ALLOW_ALL_ORIGINS = True
 
-CORS_ALLOW_CREDENTIALS = True
+# CORS_ALLOW_CREDENTIALS = True
